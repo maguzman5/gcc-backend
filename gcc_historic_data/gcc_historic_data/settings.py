@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'gcc_historic_data_db',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
