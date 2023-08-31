@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from gcc_historic_data_db import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('q1/', views.query_q1, name='q1'),
+    path('get_q1/', views.get_q1, name='get_q1'),
+    path('q2/', views.query_q2, name='q2'),
+    path('get_q2/', views.get_q2, name='get_q2')
 ]
